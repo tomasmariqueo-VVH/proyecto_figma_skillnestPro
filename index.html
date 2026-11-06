@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recreación de YouTube</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- Iconos para los símbolos de la interfaz -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <header class="navbar">
+        <div class="nav-left">
+            <i class="fa-solid fa-bars menu-icon"></i>
+            <div class="logo">
+                <i class="fa-brands fa-youtube logo-icon"></i>
+                <span>YouTube</span>
+            </div>
+        </div>
+        
+        <div class="nav-center">
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <button class="mic-btn"><i class="fa-solid fa-microphone"></i></button>
+        </div>
+
+        <div class="nav-right">
+            <button class="create-btn"><i class="fa-solid fa-plus"></i> Create</button>
+            <div class="profile-icon"></div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- MENÚ LATERAL -->
+        <aside class="sidebar">
+            <div class="sidebar-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Shorts</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Subscriptions</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fa-solid fa-user"></i>
+                <span>You</span>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="content">
+            <!-- BARRA DE SUGERENCIAS / FILTROS -->
+            <div class="filters-bar">
+                <span class="filter-tag active">All</span>
+                <span class="filter-tag">Suggestion</span>
+                <span class="filter-tag">Suggestion</span>
+                <span class="filter-tag">Suggestion</span>
+                <span class="filter-tag">Suggestion</span>
+                <span class="filter-tag">Suggestion</span>
+                <span class="filter-next">&gt;</span>
+            </div>
+
+            <!-- CUADRÍCULA DE VIDEOS -->
+            <div class="video-grid">
+                
+                <!-- Video 1 -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <!-- Coloca la imagen de la miniatura aquí -->
+                        <img src="ruta/miniatura1.jpg" alt="Miniatura 1" class="thumb-img">
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <!-- Coloca la foto de perfil del canal aquí -->
+                            <img src="ruta/avatar1.jpg" alt="Avatar" class="avatar-img">
+                        </div>
+                        <div class="video-text">
+                            <h3>Video tittle</h3>
+                            <p>Channel name / Xviews / Video Date</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="ruta/miniatura2.jpg" alt="Miniatura 2" class="thumb-img">
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="ruta/avatar2.jpg" alt="Avatar" class="avatar-img">
+                        </div>
+                        <div class="video-text">
+                            <h3>Video tittle</h3>
+                            <p>Channel name / Xviews / Video Date</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 3 (Chip) -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="ruta/miniatura3.jpg" alt="Chip" class="thumb-img">
+                    </div>
+                    <div class="video-info">
+                        <!-- Este canal tiene una letra en lugar de imagen en el diseño original -->
+                        <div class="channel-avatar avatar-purple">
+                            <span>d</span>
+                        </div>
+                        <div class="video-text">
+                            <h3>chip</h3>
+                            <p>doober43 65M 3y ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="ruta/miniatura4.jpg" alt="Miniatura 4" class="thumb-img">
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="ruta/avatar4.jpg" alt="Avatar" class="avatar-img">
+                        </div>
+                        <div class="video-text">
+                            <h3>Video tittle</h3>
+                            <p>Channel name / Xviews / Video Date</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 5 -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="ruta/miniatura5.jpg" alt="Miniatura 5" class="thumb-img">
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="ruta/avatar5.jpg" alt="Avatar" class="avatar-img">
+                        </div>
+                        <div class="video-text">
+                            <h3>Video tittle</h3>
+                            <p>Channel name / Xviews / Video Date</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 6 -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="ruta/miniatura6.jpg" alt="Miniatura 6" class="thumb-img">
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="ruta/avatar6.jpg" alt="Avatar" class="avatar-img">
+                        </div>
+                        <div class="video-text">
+                            <h3>Video tittle</h3>
+                            <p>Channel name / Xviews / Video Date</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
